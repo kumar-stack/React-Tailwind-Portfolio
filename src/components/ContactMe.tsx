@@ -1,4 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import type { SubmitEvent } from "react";
+
+type SubmitStatus = {
+  type: "" | "success" | "error";
+  message: string;
+};
 import {
   Mail,
   Phone,
@@ -11,6 +17,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import emailjs from "@emailjs/browser";
+
 const contactInfo = [
   {
     icon: Mail,
@@ -38,19 +45,22 @@ export default function Contact() {
     message: "",
   });
 
-  const [isLoading, setIsloading] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState({
+  const [isLoading, setIsLoading] = useState(false);
+
+  const [submitStatus, setSubmitStatus] = useState<SubmitStatus>({
     type: "",
     message: "",
   });
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsloading(true);
+
+    setIsLoading(true);
     setSubmitStatus({
       type: "",
       message: "",
     });
+
     try {
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
       const tempId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -74,7 +84,7 @@ export default function Contact() {
 
       setSubmitStatus({
         type: "success",
-        message: "Message sent successfully. I'll get back to you soon.",
+        message: "Form submitted successfully.",
       });
 
       setFormdata({
@@ -82,14 +92,13 @@ export default function Contact() {
         email: "",
         message: "",
       });
-    } catch (err) {
-      console.log(`Error : ${err}`);
+    } catch (error) {
       setSubmitStatus({
-        type: `error`,
-        message: "Message not sent. Please try again later.",
+        type: "error",
+        message: "Something went wrong.",
       });
     } finally {
-      setIsloading(false);
+      setIsLoading(false);
     }
   };
   return (

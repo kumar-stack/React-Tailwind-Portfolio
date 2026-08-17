@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Button from "./Button";
 import { Menu, X } from "lucide-react";
 import "../App.css";
@@ -12,7 +12,7 @@ const navlinks = [
 
 function Navbar() {
   const [isMenuAcitve, setIsMenuActive] = useState(false);
-  const blck = "block";
+
   return (
     <div className="z-20 fixed w-full">
       {/* <nav className="flex items-center justify-between px-3 py-1 bg-emerald-100 shadow-[0px_1px_1px_0px_darkgreen] opacity-65"> */}
