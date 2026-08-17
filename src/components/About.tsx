@@ -28,11 +28,13 @@ const highlights = [
 
 export default function About() {
   return (
-    <section className="w-full text-white px-4 md:px-10 lg:px-20 py-16">
-      <div className="  mx-auto grid gap-10 lg:grid-cols-2 items-start">
+    <section className="w-full text-white px-4 md:px-10 lg:px-20 py-16 max-md:mt-50">
+      <div className="  mx-auto grid gap-10 lg:grid-cols-2 items-start max-md:gap-0">
         <div>
-          <p className="text-2xl font-bold text-white-200 mb-4">About Me:</p>
-          <h3 className="text-4xl md:text-5xl font-bold leading-tight">
+          <p className="text-2xl font-bold text-white-200 mb-4 max-md:text-xl">
+            About Me:
+          </p>
+          <h3 className="text-4xl md:text-5xl max-md:text-2xl font-bold leading-tight">
             <span className="text-teal-400">Building the future,</span>
             one <br />
             component at a time.

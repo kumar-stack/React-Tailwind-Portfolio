@@ -47,9 +47,11 @@ export default function Projects() {
   return (
     <section id="project">
       <div className="py-10 ">
-        <div className="text-center mb-10">
-          <span className="text-xl text-teal-400">FEATURED WORK</span>
-          <h2 className="text-5xl text-teal-700">
+        <div className="text-center mb-10 ">
+          <span className="text-xl text-teal-400 max-md:text-md">
+            FEATURED WORK
+          </span>
+          <h2 className="text-5xl text-teal-700 max-md:text-3xl">
             Projects that <span className="text-white">makes an impact.</span>
           </h2>
           <span className="w-[60%] mx-auto font-normal text-gray-300">
@@ -63,17 +65,17 @@ export default function Projects() {
             {projectsList.map((prj, id) => (
               <div
                 key={id}
-                className="relative overflow-hidden aspect-video hover:shadow-[0px_0px_1px_0px_#fff] rounded-2xl duration-1000 transition-transform group-hover:scale-104 group  "
+                className="relative overflow-hidden aspect-video hover:shadow-[0px_0px_1px_0px_#fff] rounded-2xl duration-1000 transition-transform group-hover:scale-104 group max-md:h-[380px] max-md:max-w-full"
               >
                 <div className=" overflow-hidden bg-white/10 backdrop-blur-2xl  h-full flex flex-col gap-1 ">
                   {
                     <img
                       src={prj.image}
                       alt={prj.title}
-                      className="w-full h-[80%] max-md:h-[150px]  overflow-hidden object-cover group-hover:scale-110 transition-all"
+                      className="w-full h-[80%] max-md:h-[800px] max-md:w-full overflow-hidden object-cover group-hover:scale-110 transition-all"
                     />
                   }
-                  <div className="px-3 py-5 ">
+                  <div className="px-3 py-5 max-md:py-1">
                     <p
                       key={id}
                       className="flex justify-between mb-3 font-extrabold text-lg"
@@ -86,7 +88,7 @@ export default function Projects() {
                     </span>
                     <div className="flex flex-wrap gap-5 py-2">
                       {projectsList[2].tags.map((tag) => (
-                        <span className="flex items-center cursor-pointer gap-2 rounded-2xl px-4 py-1 shadow-[0px_0px_1px_0px_#fff] text-white bg-teal -500 backdrop-blur-lg hover:bg-white/20 ">
+                        <span className="flex items-center cursor-pointer gap-2 rounded-2xl px-4 py-1 shadow-[0px_0px_1px_0px_#fff] text-white backdrop-blur-lg hover:bg-white/20 max-md:text-sm">
                           {tag}
                         </span>
                       ))}

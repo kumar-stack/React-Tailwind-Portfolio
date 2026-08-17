@@ -46,10 +46,10 @@ export default function Main() {
       </div>
 
       <div className="relative z-10 min-h-screen w-full">
-        <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 grid items-center gap-20 md:grid-cols-2 px-4 md:px-10 lg:px-20">
-          <div className="relative z-10">
+        <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 grid items-center gap-20 md:grid-cols-2 max-md:gap-15 px-4 md:px-10 lg:px-20">
+          <div className="relative z-10  max-md:mt-40">
             <span className="desg ml-0 flex items-center max-w-max glass relative max-md:mt-15">
-              <span className="w-2 h-2 rounded-2xl bg-teal-900 inline-block animate-pulse mr-2 align-middle"></span>
+              <span className="w-2 h-2 rounded-2xl bg-teal-900 inline-block animate-pulse mr-2 align-middle max-sm:text-sm"></span>
               Software Engineer - React Specialist
             </span>
 
@@ -81,11 +81,11 @@ export default function Main() {
             </div>
           </div>
 
-          <div className="relative z-10 flex justify-center md:justify-end">
+          <div className="relative z-10 flex justify-center md:justify-end max-md:pb-30 ">
             <div className="p-5 shadow-[0px_0px_5px_0px_#fff] rounded-2xl relative">
               <img
                 src="/Images/profile-photo.jpg"
-                className="w-[420px] h-[520px] rounded-xl object-cover object-center max-xl:w-[320px] max-xl:h-[420px]"
+                className="w-[420px] h-[520px] rounded-xl object-cover object-center max-xl:w-[320px] max-xl:h-[420px] max-md:w-[250px] max-md:h-[200px]"
                 alt="profile Image"
               />
 
@@ -110,7 +110,7 @@ export default function Main() {
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-0 right-0 overflow-hidden w-full">
+        <div className="absolute bottom-10 left-0 right-0 overflow-hidden w-full max-md:-bottom-38 ">
           <p className="ml-20 mb-8 text-gray-200 font-bold">
             Technologies I work with :
           </p>

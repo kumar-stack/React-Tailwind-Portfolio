@@ -53,16 +53,18 @@ export default function Testimonials() {
           "linear-gradient( 270deg, rgb(4, 17, 26) 0%, rgb(7, 45, 53) 50%, rgb(4, 17, 26) 100% ",
       }}
     >
-      <div className="mb-4 text-center">
-        <p className="text-lg font-bold text-white-200 mb-4">What people say</p>
-        <h3 className="text-3xl md:text-3xl font-bold text-teal-400">
+      <div className="mb-4 text-center max-md:mb-0">
+        <p className="text-lg font-bold text-white-200 mb-4 max-md:text-md max-md:mb-0">
+          What people say
+        </p>
+        <h3 className="text-3xl md:text-3xl font-bold text-teal-400 max-md:text-2xl">
           Kinds words from{" "}
           <span className="text-white text-sans italic">
             amazing <br /> people.
           </span>
         </h3>
       </div>
-      <div className="relative shadow-[4px_4px_4px_0px_#000] p-5 w-xl pt-5 bg-white/50 rounded-xl m-auto mt-10 ">
+      <div className="relative shadow-[4px_4px_4px_0px_#000] p-5 w-xl pt-5 bg-white/50 rounded-xl m-auto mt-10 max-md:max-w-[95%]">
         <span className="absolute -top-4 left-4 rounded-2xl bg-teal-600">
           <Quote size={30} className="p-2" />
         </span>

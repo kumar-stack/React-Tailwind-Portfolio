@@ -102,11 +102,11 @@ export default function Contact() {
     }
   };
   return (
-    <section className="py-30 bg-[#05161f] ">
+    <section className="py-30 bg-[#05161f] max-md:py-15 ">
       <div className="container max-w-4xl m-auto ">
-        <div className="flex gap-3">
+        <div className="flex gap-3 max-md:flex-col max-md:gap-10 max-md:max-w-[95%] max-md:m-auto ">
           <form
-            className="space-y-5 pt-4 w-full max-w-lg  px-5 shadow-[0px_0px_4px_0px_#fff] rounded-lg backdrop-blur-2xl"
+            className="space-y-5 pt-4 w-full max-w-lg  px-5 shadow-[0px_0px_4px_0px_#fff] rounded-lg backdrop-blur-2xl max-md:space-y-2 max-md:pb-5 max-md:p-3"
             onSubmit={handleSubmit}
           >
             <div>
@@ -152,7 +152,7 @@ export default function Contact() {
               />
               <button
                 type="submit"
-                className="w-full text-center bg-teal-700 text-white py-2 cursor-pointer rounded-md"
+                className="w-full text-center bg-teal-700 text-white py-2 cursor-pointer rounded-md "
                 disabled={isLoading}
               >
                 {isLoading ? (
@@ -183,7 +183,7 @@ export default function Contact() {
               )}
             </div>
           </form>
-          <div className="flex flex-col w-md gap-3 backdrop-blur-2xl">
+          <div className="flex flex-col w-md gap-3 backdrop-blur-2xl max-md:max-w-full">
             <div className="p-3 shadow-[0px_0px_4px_0px_#fff]  rounded-lg ">
               <h4>Contact Information</h4>
               <div className="flex flex-col space-y-3">
