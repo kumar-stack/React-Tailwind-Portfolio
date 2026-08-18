@@ -46,7 +46,7 @@ export default function Main() {
       </div>
 
       <div className="relative z-10 min-h-screen w-full">
-        <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 grid items-center gap-20 md:grid-cols-2 max-sm:gap-15 px-4 md:px-10 lg:px-20 max-md:px-2 ">
+        <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 grid items-center gap-20 md:grid-cols-2 max-sm:gap-15 px-4 md:px-10 lg:px-20 max-md:px-2 max-md:mt-10">
           <div className="relative z-10">
             <span className="desg ml-0 flex items-center max-w-max glass relative sm:text-[12px] sm:rounded-[1px] max-sm:mt-50 ">
               <span className="w-2 h-2 rounded-2xl bg-teal-900 inline-block animate-pulse mr-2 align-middle " />
