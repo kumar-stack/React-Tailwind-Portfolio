@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "./Button";
 import { Menu, X } from "lucide-react";
 import "../App.css";
@@ -12,11 +12,23 @@ const navlinks = [
 
 function Navbar() {
   const [isMenuAcitve, setIsMenuActive] = useState(false);
+  const [isScroll, seIsScroll] = useState(false);
+
+  useEffect(() => {
+    const scrollehandler = () => {
+      seIsScroll(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", scrollehandler);
+
+    return () => window.removeEventListener("scroll", scrollehandler);
+  }, []);
 
   return (
     <div className="z-20 fixed w-full">
       {/* <nav className="flex items-center justify-between px-3 py-1 bg-emerald-100 shadow-[0px_1px_1px_0px_darkgreen] opacity-65"> */}
-      <nav className="flex items-center justify-between px-3 py-1">
+      <nav
+        className={`fixed w-full py-2 flex items-center justify-between px-3 transition-all duration-500 backdrop-blur-sm ${isScroll ? "bg-white/20 py-1" : "bg-transparent"}`}
+      >
         <a href="#" className="logo flex items-center text-white text-3xl">
           GK<span className="text-emerald-600 text-3xl">.</span>
         </a>
@@ -33,7 +45,7 @@ function Navbar() {
         </div>
 
         <button
-          className="md:hidden text-emerald-600 text-lg"
+          className="md:hidden text-white text-lg"
           onClick={() => setIsMenuActive(!isMenuAcitve)}
         >
           {isMenuAcitve ? <X /> : <Menu />}
@@ -41,9 +53,16 @@ function Navbar() {
       </nav>
       {isMenuAcitve && (
         <div>
-          <div className="undertabMenu flex flex-col mt-0.5 bg-emerald-200 py-5 gap-3 md:hidden px-2">
+          <div className="undertabMenu flex flex-col mt-13 bg-white/99 py-5 gap-3 md:hidden px-2">
             {navlinks.map((link, index) => (
-              <a href={link.href} className=" " key={index}>
+              <a
+                href={link.href}
+                className=""
+                onClick={() => {
+                  setIsMenuActive(false);
+                }}
+                key={index}
+              >
                 {link.title}
               </a>
             ))}

@@ -4,7 +4,7 @@ import { useState } from "react";
 const testimonials = [
   {
     quote:
-      "Gaurav kumar is one of the most talented FrontEnd Desinger I've worked with. His attention to detail and problem-solving skills are exceptional.",
+      "Gaurav kumar is one of the most talented FrontEnd Desinger. His attention to detail and problem-solving skills are exceptional.",
     author: "Rajesh Kumar ",
     role: "Chief Manager , Client",
     avatar:
@@ -47,17 +47,18 @@ export default function Testimonials() {
   };
   return (
     <section
-      className="py-10 "
+      className="py-10 scroll-mt-10"
+      id="testimonials"
       style={{
         background:
           "linear-gradient( 270deg, rgb(4, 17, 26) 0%, rgb(7, 45, 53) 50%, rgb(4, 17, 26) 100% ",
       }}
     >
       <div className="mb-4 text-center max-md:mb-0">
-        <p className="text-lg font-bold text-white-200 mb-4 max-md:text-md max-md:mb-0">
+        <p className="text-lg font-bold text-white-200 mb-4 max-md:text-sm max-md:mb-0">
           What people say
         </p>
-        <h3 className="text-3xl md:text-3xl font-bold text-teal-400 max-md:text-2xl">
+        <h3 className="md:text-3xl font-bold text-teal-400 max-md:text-xl">
           Kinds words from{" "}
           <span className="text-white text-sans italic">
             amazing <br /> people.

@@ -28,13 +28,16 @@ const highlights = [
 
 export default function About() {
   return (
-    <section className="w-full text-white px-4 md:px-10 lg:px-20 py-16 max-md:mt-50">
+    <section
+      id="about"
+      className="w-full text-white px-4 md:px-10 lg:px-20 py-16 max-md:mt-50 scroll-mt-10"
+    >
       <div className="  mx-auto grid gap-10 lg:grid-cols-2 items-start max-md:gap-0">
         <div>
-          <p className="text-2xl font-bold text-white-200 mb-4 max-md:text-xl">
+          <p className="text-2xl font-bold text-white-200 mb-4 max-md:text-sm">
             About Me:
           </p>
-          <h3 className="text-4xl md:text-5xl max-md:text-2xl font-bold leading-tight">
+          <h3 className="text-4xl md:text-5xl max-md:text-xl font-bold leading-tight">
             <span className="text-teal-400">Building the future,</span>
             one <br />
             component at a time.
@@ -48,7 +51,7 @@ export default function About() {
           </p>
 
           <p className="text-gray-300 py-2">
-            I specialize in React, Next.js, and TypeScript, building everything
+            I specialize in React, Tailwind and TypeScript, building everything
             from sleek landing pages to complex enterprise applications. My
             approach combines technical excellence with a keen eye for design
             and user experience.
@@ -70,8 +73,11 @@ export default function About() {
                   key={index}
                   className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md shadow-lg"
                 >
-                  <Icon className="text-teal-400 mb-3" size={28} />
-                  <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
+                  <div className="flex flex-col gap-3 max-md:flex-row">
+                    <Icon className="text-teal-400 mb-3" size={28} />
+                    <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
+                  </div>
+
                   <p className="text-gray-300 text-sm">{item.description}</p>
                 </div>
               );

@@ -3,9 +3,9 @@ import { ArrowUpRight } from "lucide-react";
 const projectsList = [
   {
     id: "0",
-    title: "Fintech Dashboard",
+    title: "Gailonline",
     description:
-      "A comprehensive financial analytics platform with real-time data visua",
+      "GAIL (India) Limited is India's leading natural gas company, with a robust and diversified presence across the entire natural gas value chain and beyond.",
     image: "/ProjectsIMages/project1.png",
     tags: ["HTML5", "CSS3", "Bootstrap 5", "JavaScrip", "JQuery"],
     link: "https://www.gailonline.com/",
@@ -23,9 +23,9 @@ const projectsList = [
   },
   {
     id: "2",
-    title: "AI Writing Assistant",
+    title: "Vendor Zone",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create bet",
+      " It centralizes procurement-related information, guidelines, and vendor development initiatives.",
     image: "/ProjectsIMages/project3.png",
     tags: ["HTML5", "CSS3", "Bootstrap 5", "SASS"],
     link: "#",
@@ -33,9 +33,9 @@ const projectsList = [
   },
   {
     id: "3",
-    title: "Project Management Tool",
+    title: "Gail CGD Portal",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking and project coordination.",
+      "GAIL’s digital ecosystem is a set of online platforms that support GAIL’s CGD business.",
     image: "/ProjectsIMages/project4.png",
     tags: ["HTML5", "CSS3", "Bootstrap 5", "JavaScrip", "SASS"],
     link: "#",
@@ -45,13 +45,13 @@ const projectsList = [
 
 export default function Projects() {
   return (
-    <section id="project">
+    <section id="projects" className="scroll-mt-10">
       <div className="py-10 ">
         <div className="text-center mb-10 ">
-          <span className="text-xl text-teal-400 max-md:text-md">
+          <span className="text-xl text-teal-400 max-md:text-sm">
             FEATURED WORK
           </span>
-          <h2 className="text-5xl text-teal-700 max-md:text-3xl">
+          <h2 className="text-3xl text-teal-700 md:text-3xl font-bold leading-tight max-md:text-xl">
             Projects that <span className="text-white">makes an impact.</span>
           </h2>
           <span className="w-[60%] mx-auto font-normal text-gray-300">
@@ -61,13 +61,16 @@ export default function Projects() {
         </div>
 
         <div>
-          <div className="grid px-15 max-md:grid-cols-1 grid-cols-2 gap-10 max-md:gap-5 max-md:px-5 md:h-auto">
+          <div className="grid px-15 md:px-10 max-md:grid-cols-1 grid-cols-2 gap-10 max-md:gap-5 max-md:px-5 md:h-auto">
             {projectsList.map((prj, id) => (
               <div
                 key={id}
-                className="relative overflow-hidden aspect-video hover:shadow-[0px_0px_1px_0px_#fff] rounded-2xl duration-1000 transition-transform group-hover:scale-104 group max-md:h-[380px] max-md:max-w-full"
+                className="relative overflow-hidden aspect-video hover:shadow-[0px_0px_1px_0px_#fff] rounded-2xl duration-1000 transition-transform group-hover:scale-104 group max-md:h-[380px] lg:h-full max-md:max-w-full max-lg:aspect-auto"
               >
-                <div className=" overflow-hidden bg-white/10 backdrop-blur-2xl  h-full flex flex-col gap-1 ">
+                <div
+                  key={id}
+                  className=" overflow-hidden bg-white/10 backdrop-blur-2xl  h-full flex flex-col gap-1 "
+                >
                   {
                     <img
                       src={prj.image}
@@ -87,8 +90,11 @@ export default function Projects() {
                       {prj.description}
                     </span>
                     <div className="flex flex-wrap gap-5 py-2">
-                      {projectsList[2].tags.map((tag) => (
-                        <span className="flex items-center cursor-pointer gap-2 rounded-2xl px-4 py-1 shadow-[0px_0px_1px_0px_#fff] text-white backdrop-blur-lg hover:bg-white/20 max-md:text-sm">
+                      {prj.tags.map((tag, indx) => (
+                        <span
+                          key={indx}
+                          className="flex items-center cursor-pointer gap-2 rounded-2xl px-4 py-1 shadow-[0px_0px_1px_0px_#fff] text-white backdrop-blur-lg hover:bg-white/20 max-md:text-sm"
+                        >
                           {tag}
                         </span>
                       ))}

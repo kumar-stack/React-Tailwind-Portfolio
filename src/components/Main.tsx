@@ -46,33 +46,33 @@ export default function Main() {
       </div>
 
       <div className="relative z-10 min-h-screen w-full">
-        <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 grid items-center gap-20 md:grid-cols-2 max-md:gap-15 px-4 md:px-10 lg:px-20">
-          <div className="relative z-10  max-md:mt-40">
-            <span className="desg ml-0 flex items-center max-w-max glass relative max-md:mt-15">
-              <span className="w-2 h-2 rounded-2xl bg-teal-900 inline-block animate-pulse mr-2 align-middle max-sm:text-sm"></span>
+        <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 grid items-center gap-20 md:grid-cols-2 max-sm:gap-15 px-4 md:px-10 lg:px-20 max-md:px-2 ">
+          <div className="relative z-10">
+            <span className="desg ml-0 flex items-center max-w-max glass relative sm:text-[12px] sm:rounded-[1px] max-sm:mt-50 ">
+              <span className="w-2 h-2 rounded-2xl bg-teal-900 inline-block animate-pulse mr-2 align-middle " />
               Software Engineer - React Specialist
             </span>
 
-            <h2 className="text-white max-md:text-xl max-md:text-center max-lg:text-2xl max-xl:text-3xl text-7xl font-bold font-sans  tracking-wider mt-4">
+            <h2 className="text-white max-md:text-xl max-md:text-center max-lg:text-2xl max-xl:text-3xl text-7xl font-bold font-sans  tracking-wider mt-4 max-md:tracking-normal">
               Crafting <span className="text-teal-700">digital</span> <br />
               experience with
-              <span className="text-white italic font-light font-serif text-4xl inline-block">
+              <span className="text-white italic font-light font-serif text-4xl inline-block max-md:text-m max-md:ml-[2px]">
                 precision.
               </span>
             </h2>
 
-            <p className="text-gray-300  my-5 text-[20px] max-md:text-xl max-md:mx-4 max-md:text-justify max-md:mt-4">
+            <p className="text-gray-300  my-5 text-[20px] max-md:text-xl max-md:mx-4 max-md:text-justify max-md:mt-4 max-md:mb-10">
               Hi, I'm Gaurav Kumar - a software engineer specializing in React,
               Tailwindcss and TypeScript. I build scalable, performant web
               applications that users love.
             </p>
 
-            <div className="mt-3 flex gap-5 flex-wrap">
+            <div className="mt-3 flex gap-5 flex-wrap max-md:mt-0">
               <Button>
                 Contact Me <ArrowRight size={18} />
               </Button>
 
-              <button className="relative flex items-center gap-2 overflow-hidden rounded-xl px-5 py-1.5 text-white backdrop-blur transition-all duration-300 hover:scale-[1.03] cursor-pointer">
+              <button className="relative flex items-center gap-2 overflow-hidden rounded-xl px-5 py-1.5 text-white backdrop-blur transition-all duration-300 hover:scale-[1.03] cursor-pointer max-md:pt-0">
                 <span className="absolute -inset-full origin-center -z-10 animate-[spin_2.5s_linear_infinite] bg-green-900" />
                 <span className="absolute inset-px -z-10 rounded-[11px] bg-slate-950/80 backdrop-blur-xl transition-all duration-300" />
                 <span className="relative z-10">Download</span>
@@ -84,8 +84,8 @@ export default function Main() {
           <div className="relative z-10 flex justify-center md:justify-end max-md:pb-30 ">
             <div className="p-5 shadow-[0px_0px_5px_0px_#fff] rounded-2xl relative">
               <img
-                src="/Images/profile-photo.jpg"
-                className="w-[420px] h-[520px] rounded-xl object-cover object-center max-xl:w-[320px] max-xl:h-[420px] max-md:w-[250px] max-md:h-[200px]"
+                src="/Images/profile3.jpg"
+                className="w-[420px] h-[520px] rounded-xl object-cover object-top max-xl:w-[320px] max-xl:h-[420px] max-md:w-[290px] max-md:h-[200px]"
                 alt="profile Image"
               />
 

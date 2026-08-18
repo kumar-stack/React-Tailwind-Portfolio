@@ -38,7 +38,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="p-15 max-md:p-2"
+      className="max-md:px-2 md:p-10 scroll-mt-10"
       style={{
         background:
           "linear-gradient(180deg,rgba(4, 17, 26, 1) 0%, rgba(7, 45, 53, 1) 50%)",
@@ -48,7 +48,7 @@ export default function Experience() {
         <p className="text-md font-bold text-white-200 mb-4 max-md:text-sm">
           CAREER JOURNEY :
         </p>
-        <h3 className="text-3xl md:text-3xl font-bold leading-tight max-md:text-2xl">
+        <h3 className="text-3xl md:text-3xl font-bold leading-tight max-md:text-xl">
           <span className="text-teal-400">Experience that </span>
           speaks Volumes.
         </h3>
@@ -59,14 +59,14 @@ export default function Experience() {
         </p>
       </div>
       <div className={`grid grid-cols-2 max-md:grid-cols-1 relative`}>
-        <div className="w-1 rounded-full absolute max-md:left-0 left-1/2 top-0 bottom-0 bg-gradient-to-b from-teal-600 via-teal-500  to-transparent h-full md:-translate-x-1/2 " />
+        <div className="w-1 rounded-full absolute max-md:left-0 left-1/2 top-0 bottom-0 bg-gradient-to-b from-teal-600 via-teal-500  to-transparent h-full md:-translate-x-1/2  " />
         <div>
           {experiences.map((exp, indx) => (
             <div
-              className={`max-md:max-w-[95%] ${indx % 2 === 0 ? "text-right max-md:text-left md:pl-0 max-md:pl-5" : "pl-[104%] text-left max-md:pl-5"}`}
+              className={`max-md:max-w-[95%] ${indx % 2 === 0 ? "text-right max-md:text-left md:pl-0 max-md:pl-5" : "pl-[104%] text-left max-md:pl-1"}`}
             >
               <div className="w-3 h-3 bg-white/20 backdrop-blur-2xl absolute ring-2 rounded-2xl -translate-x-1/2 left-[50%] max-md:left-0.5 ring-white" />
-              <div className="p-4 my-4 bg-white/5 backdrop-blur-3xl shadow-[3px_3px_4px_0px_#79797982] rounded-md md:w-2xl">
+              <div className="p-4 my-4 bg-white/5 backdrop-blur-3xl shadow-[3px_3px_4px_0px_#79797982] rounded-md md:w-xs lg:w-md 2xl:w-2xl">
                 <span className="text-cyan-500 text=xs">{exp.period}</span>
                 <p className="text-xl font-sans ">{exp.role}</p>
                 <h2 className="text-white/40 ">{exp.company}</h2>
