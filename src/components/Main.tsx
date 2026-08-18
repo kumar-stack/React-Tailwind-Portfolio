@@ -110,8 +110,8 @@ export default function Main() {
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-0 right-0 overflow-hidden w-full max-md:-bottom-38 ">
-          <p className="ml-20 mb-8 text-gray-200 font-bold">
+        <div className="absolute bottom-10 left-0 right-0 overflow-hidden w-full max-md:-bottom-45 ">
+          <p className="ml-20 mb-8 text-gray-200 font-bold max-md:mb-4">
             Technologies I work with :
           </p>
           <div className="[mask-image:linear-gradient(to_right,transparent,white_20%,white_90%,transparent)] w-[80%] m-auto overflow-hidden">
