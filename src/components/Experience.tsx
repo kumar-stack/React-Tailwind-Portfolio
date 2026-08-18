@@ -63,7 +63,7 @@ export default function Experience() {
         <div>
           {experiences.map((exp, indx) => (
             <div
-              className={`max-md:max-w-[95%] ${indx % 2 === 0 ? "text-right max-md:text-left md:pl-0 max-md:pl-5" : "pl-[104%] text-left max-md:pl-1"}`}
+              className={`max-md:max-w-[95%] ${indx % 2 === 0 ? "text-right max-md:text-left md:pl-1 max-md:pl-5" : "pl-[104%] text-left max-md:pl-1"}`}
             >
               <div className="w-3 h-3 bg-white/20 backdrop-blur-2xl absolute ring-2 rounded-2xl -translate-x-1/2 left-[50%] max-md:left-0.5 ring-white" />
               <div className="p-4 my-4 bg-white/5 backdrop-blur-3xl shadow-[3px_3px_4px_0px_#79797982] rounded-md md:w-xs lg:w-md 2xl:w-2xl">
