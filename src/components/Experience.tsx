@@ -38,7 +38,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="max-md:px-2 md:p-10 scroll-mt-10"
+      className="max-md:px-2 md:p-10 scroll-mt-10 max-md:py-10"
       style={{
         background:
           "linear-gradient(180deg,rgba(4, 17, 26, 1) 0%, rgba(7, 45, 53, 1) 50%)",
