@@ -106,7 +106,7 @@ export default function Contact() {
       <div className="container max-w-4xl m-auto ">
         <div className="flex gap-3 max-md:flex-col max-lg:flex-col max-md:gap-10 max-md:max-w-[95%] max-md:m-auto max-lg:gap-10 max-lg:items-center ">
           <form
-            className="space-y-5 pt-4 w-full max-w-lg  px-5 shadow-[0px_0px_4px_0px_#fff] rounded-lg backdrop-blur-2xl max-md:space-y-2 max-md:pb-5 max-md:p-3 max-lg:pb-3"
+            className="space-y-3 pt-4 w-full max-w-lg  px-5 shadow-[0px_0px_4px_0px_#fff] rounded-lg backdrop-blur-2xl max-md:space-y-2 max-md:pb-5 max-md:p-3 max-lg:pb-3"
             onSubmit={handleSubmit}
           >
             <div>
@@ -233,10 +233,9 @@ export default function Contact() {
                 <span className="w-2 h-2 rounded-2xl bg-teal-600 animate-pulse inline-block" />
                 <p>Currently Available</p>
               </div>
-              <p className="text-sm text-white/30">
+              <p className="text-sm text-white/30 pb-3">
                 I'm currently open to new opportunities and exciting projects.
-                Whether you need a full-time engineer or a freelance consultant,
-                let's talk!
+                Whether you need a full-time engineer let's talk!
               </p>
             </div>
           </div>
