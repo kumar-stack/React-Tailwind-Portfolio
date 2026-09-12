@@ -41,7 +41,9 @@ function Navbar() {
           ))}
         </div>
         <div className="max-md:hidden p-0">
-          <Button>Contact me</Button>
+          <Button>
+            <a href="#contactMe">Contact me</a>
+          </Button>
         </div>
 
         <button

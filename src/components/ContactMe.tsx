@@ -102,7 +102,7 @@ export default function Contact() {
     }
   };
   return (
-    <section className="py-30 bg-[#05161f] max-md:py-15 ">
+    <section id="contactMe" className="py-30 bg-[#05161f] max-md:py-15 ">
       <div className="container max-w-4xl m-auto ">
         <div className="flex gap-3 max-md:flex-col max-lg:flex-col max-md:gap-10 max-md:max-w-[95%] max-md:m-auto max-lg:gap-10 max-lg:items-center ">
           <form

@@ -69,13 +69,19 @@ export default function Main() {
 
             <div className="mt-3 flex gap-5 flex-wrap max-md:mt-0">
               <Button>
-                Contact Me <ArrowRight size={18} />
+                <a href="#contactMe" className="flex gap-2 items-center">
+                  Contact Me <ArrowRight size={18} />
+                </a>
               </Button>
 
-              <button className="relative flex items-center gap-2 overflow-hidden rounded-xl px-5 py-1.5 text-white backdrop-blur transition-all duration-300 hover:scale-[1.03] cursor-pointer max-md:pt-0">
+              <button className="relative flex items-center gap-2 overflow-hidden rounded-xl px-5 py-1.4 text-white backdrop-blur transition-all duration-300 hover:scale-[1.03] cursor-pointer max-md:pt-0">
                 <span className="absolute -inset-full origin-center -z-10 animate-[spin_2.5s_linear_infinite] bg-green-900" />
                 <span className="absolute inset-px -z-10 rounded-[11px] bg-slate-950/80 backdrop-blur-xl transition-all duration-300" />
-                <span className="relative z-10">Download</span>
+                <span className="relative z-10">
+                  <a href="/pdf/Resume_updated.pdf" target="_blank">
+                    Download
+                  </a>
+                </span>
                 <Download size={18} />
               </button>
             </div>
